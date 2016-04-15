@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EACEE4F1CBD0A580044E0FD /* DataSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EACEE4E1CBD0A580044E0FD /* DataSingleton.m */; };
+		5EACEE521CBD1D080044E0FD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EACEE511CBD1D080044E0FD /* Default-568h@2x.png */; };
+		5EACEE541CC109C30044E0FD /* SelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACEE531CC109C30044E0FD /* SelectTableViewController.swift */; };
+		5EACEE561CC114420044E0FD /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EACEE551CC114420044E0FD /* DatePickerView.swift */; };
 		5EC109671CA19FE800E69A73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC109661CA19FE800E69A73 /* AppDelegate.swift */; };
 		5EC109691CA19FE800E69A73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC109681CA19FE800E69A73 /* ViewController.swift */; };
 		5EC1096C1CA19FE800E69A73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EC1096A1CA19FE800E69A73 /* Main.storyboard */; };
 		5EC1096E1CA19FE800E69A73 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EC1096D1CA19FE800E69A73 /* Images.xcassets */; };
-		5EC109711CA19FE800E69A73 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EC1096F1CA19FE800E69A73 /* LaunchScreen.xib */; };
 		5EC1097D1CA19FE900E69A73 /* tutu_ios_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC1097C1CA19FE900E69A73 /* tutu_ios_testTests.swift */; };
+		5EC109871CA2E48C00E69A73 /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC109861CA2E48C00E69A73 /* ScheduleTableViewController.swift */; };
+		5EC109891CA2E8DA00E69A73 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC109881CA2E8DA00E69A73 /* AboutViewController.swift */; };
+		7970B313E0833343F20E1B19 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4625880E968C6130036699ED /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +32,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07F242BD9D859C562AD52D7C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		4625880E968C6130036699ED /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EACEE4D1CBD0A580044E0FD /* tutu_ios_test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tutu_ios_test-Bridging-Header.h"; sourceTree = "<group>"; };
+		5EACEE4E1CBD0A580044E0FD /* DataSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSingleton.m; sourceTree = "<group>"; };
+		5EACEE501CBD0A770044E0FD /* DataSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataSingleton.h; sourceTree = "<group>"; };
+		5EACEE511CBD1D080044E0FD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5EACEE531CC109C30044E0FD /* SelectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectTableViewController.swift; sourceTree = "<group>"; };
+		5EACEE551CC114420044E0FD /* DatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		5EC109611CA19FE800E69A73 /* tutu_ios_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tutu_ios_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EC109651CA19FE800E69A73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EC109661CA19FE800E69A73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EC109681CA19FE800E69A73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5EC1096B1CA19FE800E69A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5EC1096D1CA19FE800E69A73 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		5EC109701CA19FE800E69A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5EC109761CA19FE900E69A73 /* tutu_ios_testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tutu_ios_testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EC1097B1CA19FE900E69A73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EC1097C1CA19FE900E69A73 /* tutu_ios_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tutu_ios_testTests.swift; sourceTree = "<group>"; };
+		5EC109861CA2E48C00E69A73 /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
+		5EC109881CA2E8DA00E69A73 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		7C57CCB4032151905F3591FF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7970B313E0833343F20E1B19 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +76,12 @@
 		5EC109581CA19FE800E69A73 = {
 			isa = PBXGroup;
 			children = (
+				5EACEE511CBD1D080044E0FD /* Default-568h@2x.png */,
 				5EC109631CA19FE800E69A73 /* tutu_ios_test */,
 				5EC109791CA19FE900E69A73 /* tutu_ios_testTests */,
 				5EC109621CA19FE800E69A73 /* Products */,
+				93A1765C9A2C3F8E43A24316 /* Pods */,
+				EEE5D9CE79D60D58BEFD187D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,11 +97,11 @@
 		5EC109631CA19FE800E69A73 /* tutu_ios_test */ = {
 			isa = PBXGroup;
 			children = (
-				5EC109661CA19FE800E69A73 /* AppDelegate.swift */,
-				5EC109681CA19FE800E69A73 /* ViewController.swift */,
-				5EC1096A1CA19FE800E69A73 /* Main.storyboard */,
+				5EACEE4D1CBD0A580044E0FD /* tutu_ios_test-Bridging-Header.h */,
+				5EC1098C1CA96A8A00E69A73 /* DataParser */,
+				5EC1098B1CA96A7B00E69A73 /* DataManager */,
+				5EC1098A1CA96A7100E69A73 /* Views */,
 				5EC1096D1CA19FE800E69A73 /* Images.xcassets */,
-				5EC1096F1CA19FE800E69A73 /* LaunchScreen.xib */,
 				5EC109641CA19FE800E69A73 /* Supporting Files */,
 			);
 			path = tutu_ios_test;
@@ -112,6 +132,53 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5EC1098A1CA96A7100E69A73 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5EC109661CA19FE800E69A73 /* AppDelegate.swift */,
+				5EC109681CA19FE800E69A73 /* ViewController.swift */,
+				5EC109861CA2E48C00E69A73 /* ScheduleTableViewController.swift */,
+				5EC109881CA2E8DA00E69A73 /* AboutViewController.swift */,
+				5EC1096A1CA19FE800E69A73 /* Main.storyboard */,
+				5EACEE531CC109C30044E0FD /* SelectTableViewController.swift */,
+				5EACEE551CC114420044E0FD /* DatePickerView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		5EC1098B1CA96A7B00E69A73 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				5EACEE501CBD0A770044E0FD /* DataSingleton.h */,
+				5EACEE4E1CBD0A580044E0FD /* DataSingleton.m */,
+			);
+			name = DataManager;
+			sourceTree = "<group>";
+		};
+		5EC1098C1CA96A8A00E69A73 /* DataParser */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DataParser;
+			sourceTree = "<group>";
+		};
+		93A1765C9A2C3F8E43A24316 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07F242BD9D859C562AD52D7C /* Pods.debug.xcconfig */,
+				7C57CCB4032151905F3591FF /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EEE5D9CE79D60D58BEFD187D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4625880E968C6130036699ED /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EC109801CA19FE900E69A73 /* Build configuration list for PBXNativeTarget "tutu_ios_test" */;
 			buildPhases = (
+				AADFC84ABDA8554BC083493D /* Check Pods Manifest.lock */,
 				5EC1095D1CA19FE800E69A73 /* Sources */,
 				5EC1095E1CA19FE800E69A73 /* Frameworks */,
 				5EC1095F1CA19FE800E69A73 /* Resources */,
+				4A4407447FFFAC7856977235 /* Embed Pods Frameworks */,
+				28EDFED560A4A9728DB39494 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,6 +226,7 @@
 		5EC109591CA19FE800E69A73 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Макаренков Антон Вячеславович";
 				TargetAttributes = {
@@ -193,8 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EC1096C1CA19FE800E69A73 /* Main.storyboard in Resources */,
-				5EC109711CA19FE800E69A73 /* LaunchScreen.xib in Resources */,
 				5EC1096E1CA19FE800E69A73 /* Images.xcassets in Resources */,
+				5EACEE521CBD1D080044E0FD /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,13 +278,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		28EDFED560A4A9728DB39494 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A4407447FFFAC7856977235 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AADFC84ABDA8554BC083493D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5EC1095D1CA19FE800E69A73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EC109871CA2E48C00E69A73 /* ScheduleTableViewController.swift in Sources */,
 				5EC109691CA19FE800E69A73 /* ViewController.swift in Sources */,
+				5EC109891CA2E8DA00E69A73 /* AboutViewController.swift in Sources */,
+				5EACEE4F1CBD0A580044E0FD /* DataSingleton.m in Sources */,
+				5EACEE561CC114420044E0FD /* DatePickerView.swift in Sources */,
 				5EC109671CA19FE800E69A73 /* AppDelegate.swift in Sources */,
+				5EACEE541CC109C30044E0FD /* SelectTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,14 +366,6 @@
 				5EC1096B1CA19FE800E69A73 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5EC1096F1CA19FE800E69A73 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5EC109701CA19FE800E69A73 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -338,21 +454,28 @@
 		};
 		5EC109811CA19FE900E69A73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07F242BD9D859C562AD52D7C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = tutu_ios_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "tutu_ios_test/tutu_ios_test-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		5EC109821CA19FE900E69A73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C57CCB4032151905F3591FF /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = tutu_ios_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "tutu_ios_test/tutu_ios_test-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +532,7 @@
 				5EC109821CA19FE900E69A73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5EC109831CA19FE900E69A73 /* Build configuration list for PBXNativeTarget "tutu_ios_testTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +541,7 @@
 				5EC109851CA19FE900E69A73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
