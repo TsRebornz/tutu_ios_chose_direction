@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class SelectTableViewController : UITableViewController {
+class SelectTableViewController : UITableViewController, DatePickerViewDelegate {
     
     //@IBOutlet weak var datePickerCell: UITableViewCell?
     
@@ -25,6 +25,10 @@ class SelectTableViewController : UITableViewController {
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    func datePickerViewDelegate(controller: DatePickerView, sendStringDate stringDate: String) {
+        datePickerCell.textLabel?.text = stringDate
     }
     
     override func didReceiveMemoryWarning() {
@@ -47,6 +51,37 @@ class SelectTableViewController : UITableViewController {
 //        cell!.textLabel?.text = test
 //        return cell!
 //    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // sender parameter contains a reference to the control that triggered the segue
+        let navigationController = segue.destinationViewController as! UINavigationController
+        if (segue.identifier == "datePickerSeg"){
+                let datePickerController = navigationController.topViewController as! DatePickerView
+                datePickerController.delegate = self
+        }
+//        else if(segue.identifier == "datePickerSeg"){
+//                let scheduleTableViewController = navigationController.topViewController as! ScheduleTableViewController
+//        }
+        
+        
+        
+        
+//        if segue.identifier == "AddItem" {
+//            let navigationController = segue.destinationViewController as! UINavigationController
+//            let controller = navigationController.topViewController as! DetailedViewTableViewController
+//            controller.delegate = self
+//            
+//        }else if segue.identifier == "EditItem"{
+//            let navigationController = segue.destinationViewController as! UINavigationController
+//            let controller = navigationController.topViewController as! DetailedViewTableViewController
+//            controller.delegate = self
+//            
+//            if let indexPath = tableView.indexPathForCell(sender as! UITableViewCell){
+//                controller.editItem = items[indexPath.row]
+//            }
+//        }
+    }
+
     
     
 }

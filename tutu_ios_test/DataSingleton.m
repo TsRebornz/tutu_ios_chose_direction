@@ -35,12 +35,12 @@
     return sharedData;
  }
 
--(instancetype)getCityBy:(int)Id{
-    return @"City_xyz";
+-(id)getCityBy:(int)Id{
+    return [[NSObject alloc] init];
 }
 
--(instancetype)getStationBy:(int)Id{
-    return @"Station_xyz";
+-(id)getStationBy:(int)Id{
+    return [[NSObject alloc] init];
 }
 
 -(NSString*)getTest{

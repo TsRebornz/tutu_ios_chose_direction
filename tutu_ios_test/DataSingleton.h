@@ -23,8 +23,8 @@
 
 -(void)setNewTest:(NSString*)newVal;
 
--(instancetype)getStationBy:(int)Id;
--(instancetype)getCityBy:(int)Id;
+-(id)getStationBy:(int)Id;
+-(id)getCityBy:(int)Id;
 
 
 

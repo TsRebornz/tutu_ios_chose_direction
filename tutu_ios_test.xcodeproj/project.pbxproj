@@ -18,6 +18,12 @@
 		5EC1097D1CA19FE900E69A73 /* tutu_ios_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC1097C1CA19FE900E69A73 /* tutu_ios_testTests.swift */; };
 		5EC109871CA2E48C00E69A73 /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC109861CA2E48C00E69A73 /* ScheduleTableViewController.swift */; };
 		5EC109891CA2E8DA00E69A73 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC109881CA2E8DA00E69A73 /* AboutViewController.swift */; };
+		5ECC353F1CE207D300E386E7 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECC353E1CE207D300E386E7 /* Network.swift */; };
+		5ECC35411CE2088800E386E7 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECC35401CE2088800E386E7 /* City.swift */; };
+		5ECC35431CE2092D00E386E7 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECC35421CE2092D00E386E7 /* Station.swift */; };
+		5ECC35451CE20CCF00E386E7 /* NetworkDataMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECC35441CE20CCF00E386E7 /* NetworkDataMapping.swift */; };
+		5ECC35481CE20DCB00E386E7 /* UITestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECC35471CE20DCB00E386E7 /* UITestData.swift */; };
+		5ECC354A1CE3799400E386E7 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECC35491CE3799400E386E7 /* DetailedViewController.swift */; };
 		7970B313E0833343F20E1B19 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4625880E968C6130036699ED /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -51,6 +57,12 @@
 		5EC1097C1CA19FE900E69A73 /* tutu_ios_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tutu_ios_testTests.swift; sourceTree = "<group>"; };
 		5EC109861CA2E48C00E69A73 /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
 		5EC109881CA2E8DA00E69A73 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		5ECC353E1CE207D300E386E7 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		5ECC35401CE2088800E386E7 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		5ECC35421CE2092D00E386E7 /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		5ECC35441CE20CCF00E386E7 /* NetworkDataMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDataMapping.swift; sourceTree = "<group>"; };
+		5ECC35471CE20DCB00E386E7 /* UITestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITestData.swift; sourceTree = "<group>"; };
+		5ECC35491CE3799400E386E7 /* DetailedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 		7C57CCB4032151905F3591FF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,8 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				5EACEE4D1CBD0A580044E0FD /* tutu_ios_test-Bridging-Header.h */,
-				5EC1098C1CA96A8A00E69A73 /* DataParser */,
-				5EC1098B1CA96A7B00E69A73 /* DataManager */,
+				5EC109661CA19FE800E69A73 /* AppDelegate.swift */,
+				5ECC353A1CE2067100E386E7 /* Core */,
 				5EC1098A1CA96A7100E69A73 /* Views */,
 				5EC1096D1CA19FE800E69A73 /* Images.xcassets */,
 				5EC109641CA19FE800E69A73 /* Supporting Files */,
@@ -135,13 +147,14 @@
 		5EC1098A1CA96A7100E69A73 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5EC109661CA19FE800E69A73 /* AppDelegate.swift */,
+				5ECC35461CE20DA600E386E7 /* UITestData */,
 				5EC109681CA19FE800E69A73 /* ViewController.swift */,
 				5EC109861CA2E48C00E69A73 /* ScheduleTableViewController.swift */,
 				5EC109881CA2E8DA00E69A73 /* AboutViewController.swift */,
 				5EC1096A1CA19FE800E69A73 /* Main.storyboard */,
 				5EACEE531CC109C30044E0FD /* SelectTableViewController.swift */,
 				5EACEE551CC114420044E0FD /* DatePickerView.swift */,
+				5ECC35491CE3799400E386E7 /* DetailedViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -155,11 +168,64 @@
 			name = DataManager;
 			sourceTree = "<group>";
 		};
-		5EC1098C1CA96A8A00E69A73 /* DataParser */ = {
+		5EC1098C1CA96A8A00E69A73 /* NetworkDataMapping */ = {
+			isa = PBXGroup;
+			children = (
+				5ECC35441CE20CCF00E386E7 /* NetworkDataMapping.swift */,
+			);
+			name = NetworkDataMapping;
+			sourceTree = "<group>";
+		};
+		5ECC35391CE2060000E386E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5ECC35421CE2092D00E386E7 /* Station.swift */,
+				5ECC35401CE2088800E386E7 /* City.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		5ECC353A1CE2067100E386E7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5ECC353D1CE207BC00E386E7 /* Network */,
+				5ECC35391CE2060000E386E7 /* Models */,
+				5ECC353C1CE206DB00E386E7 /* JsonValidator */,
+				5ECC353B1CE2068D00E386E7 /* StartModule */,
+				5EC1098B1CA96A7B00E69A73 /* DataManager */,
+				5EC1098C1CA96A8A00E69A73 /* NetworkDataMapping */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		5ECC353B1CE2068D00E386E7 /* StartModule */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = DataParser;
+			name = StartModule;
+			sourceTree = "<group>";
+		};
+		5ECC353C1CE206DB00E386E7 /* JsonValidator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = JsonValidator;
+			sourceTree = "<group>";
+		};
+		5ECC353D1CE207BC00E386E7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5ECC353E1CE207D300E386E7 /* Network.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		5ECC35461CE20DA600E386E7 /* UITestData */ = {
+			isa = PBXGroup;
+			children = (
+				5ECC35471CE20DCB00E386E7 /* UITestData.swift */,
+			);
+			name = UITestData;
 			sourceTree = "<group>";
 		};
 		93A1765C9A2C3F8E43A24316 /* Pods */ = {
@@ -227,7 +293,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Макаренков Антон Вячеславович";
 				TargetAttributes = {
 					5EC109601CA19FE800E69A73 = {
@@ -331,13 +397,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ECC354A1CE3799400E386E7 /* DetailedViewController.swift in Sources */,
 				5EC109871CA2E48C00E69A73 /* ScheduleTableViewController.swift in Sources */,
 				5EC109691CA19FE800E69A73 /* ViewController.swift in Sources */,
+				5ECC35411CE2088800E386E7 /* City.swift in Sources */,
+				5ECC353F1CE207D300E386E7 /* Network.swift in Sources */,
 				5EC109891CA2E8DA00E69A73 /* AboutViewController.swift in Sources */,
 				5EACEE4F1CBD0A580044E0FD /* DataSingleton.m in Sources */,
+				5ECC35431CE2092D00E386E7 /* Station.swift in Sources */,
+				5ECC35451CE20CCF00E386E7 /* NetworkDataMapping.swift in Sources */,
 				5EACEE561CC114420044E0FD /* DatePickerView.swift in Sources */,
 				5EC109671CA19FE800E69A73 /* AppDelegate.swift in Sources */,
 				5EACEE541CC109C30044E0FD /* SelectTableViewController.swift in Sources */,
+				5ECC35481CE20DCB00E386E7 /* UITestData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +464,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -460,9 +533,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = tutu_ios_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "none.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "tutu_ios_test/tutu_ios_test-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -474,8 +549,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = tutu_ios_test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "none.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "tutu_ios_test/tutu_ios_test-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -493,6 +570,7 @@
 				);
 				INFOPLIST_FILE = tutu_ios_testTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "none.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tutu_ios_test.app/tutu_ios_test";
 			};
@@ -508,6 +586,7 @@
 				);
 				INFOPLIST_FILE = tutu_ios_testTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "none.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tutu_ios_test.app/tutu_ios_test";
 			};

@@ -1,10 +1,8 @@
-//
 //  AppDelegate.swift
 //  tutu_ios_test
 //
 //  Created by Макаренков Антон Вячеславович on 22/03/16.
 //  Copyright (c) 2016 Макаренков Антон Вячеславович. All rights reserved.
-//
 
 import UIKit
 
