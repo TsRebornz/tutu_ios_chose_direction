@@ -24,13 +24,15 @@ public class Network {
     
     //getting data from local
     
-    public class func getTopAppsDataFromFileWithSuccess(success: (data:(NSData)) -> NSData ) -> Int   {
+    public class func getTopAppsDataFromFileWithSuccess(success: (data:(NSData)) -> NSData )   {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
             let filePath = NSBundle.mainBundle().pathForResource("allStations", ofType:"json")
             let data = try! NSData(contentsOfFile:filePath!,
                 options: NSDataReadingOptions.DataReadingUncached)
             success(data: data)
+            
         })
+        
     }
     
     public class func loadDataFromURL(url: NSURL, completion:(data: NSData?, error: NSError?) -> Void) {
