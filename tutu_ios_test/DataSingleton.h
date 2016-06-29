@@ -23,6 +23,8 @@
 
 -(void)setNewTest:(NSString*)newVal;
 
+-(NSMutableDictionary*)getDataForTableView;
+
 -(id)getStationBy:(int)Id;
 -(id)getCityBy:(int)Id;
 

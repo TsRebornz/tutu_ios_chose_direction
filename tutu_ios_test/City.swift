@@ -35,5 +35,7 @@ public class City : NSObject, Decodable, NSCopying {
         }
         self.stations?.append(station);
     }
+    
+    
 }
 

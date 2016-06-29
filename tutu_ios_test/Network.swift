@@ -12,7 +12,7 @@ let TopAppURL = "https://raw.githubusercontent.com/tutu-ru/hire_ios-test/master/
 
 public class Network {
     
-    public class func getTopAppsDataFromInternetWithSucces(success: ((iTunesData: NSData!) -> Void)){
+    public class func getTopAppsDataFromInternetWithSucces(success: ((iTunesData: NSData!) -> NSData)){
         loadDataFromURL(NSURL(string: TopAppURL)!, completion:{(data,error) -> Void in
             if let data = data{
                 success(iTunesData: data)
@@ -24,7 +24,7 @@ public class Network {
     
     //getting data from local
     
-    public class func getTopAppsDataFromFileWithSuccess(success: ((data: NSData) -> Void)) {
+    public class func getTopAppsDataFromFileWithSuccess(success: (data:(NSData)) -> NSData ) -> Int   {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), {
             let filePath = NSBundle.mainBundle().pathForResource("allStations", ofType:"json")
             let data = try! NSData(contentsOfFile:filePath!,

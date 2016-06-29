@@ -1,5 +1,6 @@
 import Foundation
 import Gloss
+import CoreLocation
 
 public class Station : NSObject ,Decodable {
     
@@ -7,6 +8,7 @@ public class Station : NSObject ,Decodable {
     public let stationId: Int
     public var cityRef: City?
     public let stationTitle: String
+    //public let longtitude: CLLocation
     
     public required init?(json: JSON) {
         stationId = ("stationId" <~~ json)!
@@ -18,6 +20,8 @@ public class Station : NSObject ,Decodable {
             self.cityRef = cityRef;
             self.stationTitle = stationTitle;
     }
+    
+    
     
 
 }

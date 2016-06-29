@@ -23,8 +23,6 @@
     return self;
 }
 
-  
-
 +(id)sharedInstance
  {
       static DataSingleton *sharedData = nil;
@@ -51,11 +49,10 @@
     self.test = newVal;
 }
 
-
-
-
-
-
-
+-(NSMutableDictionary*)getDataForTableView{
+    NSMutableDictionary* data = [[NSMutableDictionary alloc] init];
+    //get from data property
+    return data;
+}
 
 @end
